@@ -1,0 +1,376 @@
+@charset "utf-8";
+/* CSS Document */
+/**Reset**/
+body, html, p, ul, li, h1, h2, h3, h4, h5, h6, section, article, header, footer, aside
+{
+	margin:0;
+	padding:0;
+	outline:none;
+}
+body
+{
+	background:#f5f5f5;
+	font-size:12px;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-weight:normal;
+	height:100%;
+	width:100%;
+}
+#wrapper
+{
+	width:100%;
+}
+.site
+{
+	width:960px;
+	margin:0 auto;
+}
+p
+{
+	font-size:17px;
+	color:#30343F;
+	font-weight:normal;
+	padding:0 0 15px 0;
+}
+a:link, a:visited
+{
+	color:#ff8b6c;
+	text-decoration:none;
+}
+a:hover
+{
+	text-decoration:underline;
+}
+/**Heading style starts**/
+h1
+{
+	font-size:35px;
+	padding:20px 0px;
+	clear:both;
+	font-weight:bold;
+	text-align:center;
+	color:#d40207;
+	text-transform:uppercase;
+}
+/**Heading style ends**/
+/**********Header starts******/
+header
+{
+	width:100%;
+}
+header img
+{
+	vertical-align:top;
+	margin: 30px 0px 100px 0px; 
+}
+header a:link, header a:visited
+{
+	color:white;
+	font-size:45px;
+	font-family:Tahoma, Geneva, sans-serif;
+	text-decoration:none;
+	display:block;
+	clear:both;
+}
+header p
+{
+	display:inline-block;
+	margin-left:175px;
+}
+header h1
+{
+	font-size:45px;
+	font-weight:normal;
+	text-transform:uppercase;
+	margin:0;
+	padding:0px 0px 20px 0px;
+	color:#fff;
+	text-align:left;
+}
+header h1 span
+{
+	font-size:25px;
+	text-transform:none;
+	color:#a5a5a5;
+}
+/**********Header ends********/
+
+.landing-page
+{
+	position:relative;
+	background:#30343f url(../images/ipad2.png) no-repeat bottom center;
+}
+.menu-link
+{
+	width:40px;
+	height:40px;
+	border-radius:50%;
+	display:block;
+	background:url(../images/menu-arrow.png) no-repeat center;
+	cursor:pointer;
+}
+.logo
+{
+	float:left;
+}
+#main-page
+{
+	padding:20px 0px;
+}
+#main-page
+{
+	display:none;
+}
+#main-page header
+{
+	background:#f5f5f5;
+	height:120px;
+	z-index:100;
+}
+/**Navigation style starts*/
+#navigation
+{
+	padding-top:15px;
+	height:80px;
+}
+#navigation ul
+{
+	float:right;
+	width:auto;
+}
+#navigation ul li
+{
+	list-style:none;
+	display:inline-block;
+	padding:10px;
+}
+#navigation ul li a:link, #navigation ul li a:visited
+{
+	color:#30343f;
+	font-size:20px;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+#navigation ul li a:hover
+{
+	color:#ff8b6c;
+}
+/**Navigation style ends**/
+
+/**About style starts**/
+#about
+{
+	position:relative;
+}
+#about article
+{
+	background:white;
+	padding:10px;
+	text-align:left;
+	float:left;
+}
+#about.parallax
+{
+	background:url(../images/building.jpg) no-repeat left bottom;
+	text-align:center;
+	background-position: 50% 0px;
+	background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 10px solid rgba(255, 255, 255, 0.3);
+    border-top: 10px solid rgba(255, 255, 255, 0.3);
+    color: #FFFFFF;
+    height: 800px;
+    padding-top: 130px;
+    position: relative;
+    width: 100%;
+	background-attachment:fixed;
+}
+.parallax .quoteWrap {
+    margin: 0 auto;
+    width: 960px;
+}
+
+
+
+/**About style ends**/
+/**Work style starts**/
+#work
+{
+	padding:130px 0px 50px 0px;
+}
+#work article
+{
+	width:250px;
+	height:250px;
+	display:inline-block;
+	position:relative;
+	transition:all 0.5s ease-in-out;
+	margin:0px 65px 30px 0px;
+}
+
+.ch-item
+{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	position: relative;
+	cursor: default;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+.ch-info
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	overflow: hidden;
+	background: #c9512e;
+	box-shadow: inset 0 0 0 5px rgba(0,0,0,0.05);
+	text-align:center;
+	color:#fff;
+	font-size:20px;
+	display:table;
+}
+.ch-info p
+{
+	display:table-cell;
+	vertical-align:middle;
+}
+.ch-thumb
+{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	overflow: hidden;
+	position: absolute;
+	box-shadow: inset 0 0 0 15px rgba(255,255,255, 0.5);
+	-webkit-transform-origin: 95% 40%;
+	-moz-transform-origin: 95% 40%;
+	-o-transform-origin: 95% 40%;
+	-ms-transform-origin: 95% 40%;
+	transform-origin: 95% 40%;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.ch-img-1, .ch-img-2, .ch-img-3
+{
+	background-image: url(../images/sample.jpg);
+z-index: 12;
+}
+.ch-thumb:after
+{
+	content:"";
+	position:absolute;
+	top:40%;
+	left:95%;
+	background:black;
+	width:8px;
+	height:8px;
+	border-radius:50%;
+	margin:-4px 0 0 -4px;
+}
+.ch-item:hover .ch-thumb 
+{
+box-shadow: inset 0 0 0 15px rgba(255,255,255, 0.5), 0 1px 3px rgba(0,0,0,0.2);
+-webkit-transform: rotate(-110deg);
+-moz-transform: rotate(-110deg);
+-o-transform: rotate(-110deg);
+-ms-transform: rotate(-110deg);
+transform: rotate(-110deg);
+}
+
+/**Work style ends**/
+
+/**Contact style starts**/
+#contact
+{
+	overflow:auto;
+	margin:0px 0 50px 0px;
+	padding:0px 0px 20px 0px;
+}
+#contact.parallax
+{
+	background:url(../images/building1.jpg) no-repeat left bottom;
+	text-align:center;
+	background-position: 50% 0px;
+	background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 10px solid rgba(255, 255, 255, 0.3);
+    border-top: 10px solid rgba(255, 255, 255, 0.3);
+    color: #FFFFFF;
+    height: 800px;
+    margin: 0;
+    padding-top: 130px;
+    position: relative;
+    width: 100%;
+	background-attachment:fixed;
+}
+.cont
+{
+	background:url(../images/l3.png) no-repeat left top;
+	float:left;
+	background-size:cover;
+	width:240px;
+	height:250px;
+	padding:100px 0px 0px 70px;
+	font-size:15px;
+	color:#313540;
+	font-weight:bold;
+	text-align:left;
+}
+#contact_form
+{
+	float:right;
+	width:40%;
+	font-size:15px;
+	color:#fff;
+	padding:45px 70px;
+	background:url(../images/board.png) no-repeat left top;
+	background-size:cover;
+}
+fieldset
+{
+	border:none;
+}
+#contact_form label
+{
+	width:30%;
+	display:inline-block;
+	vertical-align:top;
+	text-align:right;
+	padding-right:10px;
+}
+#contact_form input
+{
+	width:65%;
+	display:inline-block;
+	vertical-align:top;
+	text-align:left;
+	height:25px;
+	border:none;
+}
+#contact_form textarea
+{
+	resize:none;
+	width:65%;
+	height:70px;
+	border:none;
+}
+#contact_form em
+{
+	color:red;
+}
+#submit
+{
+	width:auto !important;
+	float:right;
+	background:#313540;
+	color:#fff;
+	font-weight:bold;	
+	border:none;
+	cursor:pointer;
+}
+/**Contact style ends**/

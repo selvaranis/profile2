@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style>
+*
+{
+	box-sizing:border-box;
+}
+.main
+{
+width: 220px;
+height: 220px;
+display: inline-block;
+margin: 20px;
+}
+.ch-item
+{
+width: 100%;
+height: 100%;
+border-radius: 50%;
+position: relative;
+cursor: default;
+box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+.ch-info
+{
+	position: absolute;
+width: 100%;
+height: 100%;
+border-radius: 50%;
+overflow: hidden;
+background: #c9512e url(images/noise.png);
+box-shadow: inset 0 0 0 5px rgba(0,0,0,0.05);
+text-align:center;
+padding-top:30px;
+color:#fff;
+font-size:20px;
+}
+.ch-thumb
+{
+	width: 100%;
+height: 100%;
+border-radius: 50%;
+overflow: hidden;
+position: absolute;
+box-shadow: inset 0 0 0 15px rgba(255,255,255, 0.5);
+-webkit-transform-origin: 95% 40%;
+-moz-transform-origin: 95% 40%;
+-o-transform-origin: 95% 40%;
+-ms-transform-origin: 95% 40%;
+transform-origin: 95% 40%;
+-webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+}
+.ch-img-1
+{
+	background-image: url(images/sample.jpg);
+z-index: 12;
+}
+.ch-thumb:after
+{
+	content:"";
+	position:absolute;
+	top:40%;
+	left:95%;
+	background:black;
+	width:8px;
+	height:8px;
+	border-radius:50%;
+	margin:-4px 0 0 -4px;
+}
+.ch-item:hover .ch-thumb 
+{
+box-shadow: inset 0 0 0 15px rgba(255,255,255, 0.5), 0 1px 3px rgba(0,0,0,0.2);
+-webkit-transform: rotate(-110deg);
+-moz-transform: rotate(-110deg);
+-o-transform: rotate(-110deg);
+-ms-transform: rotate(-110deg);
+transform: rotate(-110deg);
+}
+
+</style>
+</head>
+
+<body>
+<div class="main">
+
+<div class="ch-item">
+<div class="ch-info">
+<p>Sample work1</p>
+</div>
+<div class="ch-thumb ch-img-1"></div>
+</div>
+</div>
+</body>
+</html>
